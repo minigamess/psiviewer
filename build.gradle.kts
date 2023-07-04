@@ -10,6 +10,10 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    implementation ("cn.hutool:hutool-all:5.8.20")
+}
+
 version = properties("pluginVersion").get().ifEmpty { properties("platformVersion").get() } +
         properties("pluginBranch").get().ifEmpty { properties("platformBranch").get() } +
         properties("pluginBuild").get().ifEmpty { properties("platformBuild").get() }

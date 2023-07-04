@@ -18,6 +18,23 @@
 
     <!-- Component's actions -->
     <actions>
+
+        <action id="idea.plugin.psiviewer.controller.actions.jumpto_IdaAction"
+                class="idea.plugin.psiviewer.controller.actions.jumpto_IdaAction"
+                text="jumpto"
+                description="jumpto">
+            <keyboard-shortcut first-keystroke="control 1" keymap="$default"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+
+        <action id="idea.plugin.psiviewer.controller.actions.open_pseudocode_IdaAction"
+                class="idea.plugin.psiviewer.controller.actions.open_pseudocode_IdaAction"
+                text="open_pseudocode"
+                description="open_pseudocode">
+            <keyboard-shortcut first-keystroke="control 2" keymap="$default"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+
         <action class="idea.plugin.psiviewer.controller.actions.ViewElementAtCaretAction"
                 description="Display PSI tree for element at caret" icon="/images/psi18x18.png"
                 id="View PSI element at caret" text="View PSI element at caret">
