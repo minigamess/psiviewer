@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    implementation ("cn.hutool:hutool-all:5.8.20")
+    implementation ("cn.hutool:hutool-all:5.8.22")
 }
 
 version = properties("pluginVersion").get().ifEmpty { properties("platformVersion").get() } +
